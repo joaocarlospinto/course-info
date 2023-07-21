@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e492be9-733a-49ff-b35c-a99ba4842c7d" name="Changes" comment="First part Call API + JUNIT">
-      <change afterPath="$PROJECT_DIR$/course-info-cli/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/pluralsight/courseinfo/cli/service/CourseStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-cli/src/test/java/com/pluralsight/courseinfo/cli/service/CourseStorageServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-repository/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/domain/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/repository/CourseJdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/repository/CourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/repository/RepositoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-repository/src/test/java/com/pluralsight/courseinfo/domain/CourseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses.db.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_init.sql" afterDir="false" />
+    <list default="true" id="8e492be9-733a-49ff-b35c-a99ba4842c7d" name="Changes" comment="add course repository">
+      <change afterPath="$PROJECT_DIR$/course-info-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info-server/src/main/java/CourseServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info-server/src/main/java/com/pluralsight/courseinfo/server/CourseResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-cli/src/main/java/com/pluralsight/courseinfo/cli/service/CourseStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/pluralsight/courseinfo/cli/service/CourseStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-cli/src/test/java/com/pluralsight/courseinfo/cli/service/CourseStorageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/test/java/com/pluralsight/courseinfo/cli/service/CourseStorageServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/domain/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/domain/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/repository/CourseJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/repository/CourseJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/pluralsight/courseinfo/repository/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-repository/src/test/java/com/pluralsight/courseinfo/domain/CourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-repository/src/test/java/com/pluralsight/courseinfo/domain/CourseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses.db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/courses.db.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/courseinfo/cli/CourseRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/pluralsight/courseinfo/cli/CourseRetriever.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/courseinfo/cli/service/CourseRetrievalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/pluralsight/courseinfo/cli/service/CourseRetrievalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/courseinfo/cli/service/PluralsightCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/pluralsight/courseinfo/cli/service/PluralsightCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/courseinfo/cli/service/PluralsightCourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/test/java/com/pluralsight/courseinfo/cli/service/PluralsightCourseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +28,8 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Utilizador/IdeaProjects/course-info",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Utilizador/IdeaProjects/course-info&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.pluralsight.courseinfo.repository" />
@@ -95,17 +90,10 @@
       <recent name="com.pluralsight.courseinfo.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.pluralsight.courseinfo.cli.CourseRetriever">
-    <configuration name="CourseRetriever" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.courseinfo.cli.CourseRetriever" />
-      <module name="course-info" />
-      <option name="PROGRAM_PARAMETERS" value="sander-mak" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pluralsight.courseinfo.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Application.CourseServer">
+    <configuration name="CourseServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CourseServer" />
+      <module name="course-info-server" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CourseServer" />
         <item itemvalue="JUnit.CourseStorageServiceTest" />
         <item itemvalue="JUnit.CourseTest" />
         <item itemvalue="JUnit.PluralsightCourseTest (1)" />
         <item itemvalue="JUnit.PluralsightCourseTest" />
-        <item itemvalue="Application.CourseRetriever" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689781612390</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add course repository">
+      <created>1689933476454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689933476454</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +222,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First part Call API + JUNIT" />
-    <option name="LAST_COMMIT_MESSAGE" value="First part Call API + JUNIT" />
+    <MESSAGE value="add course repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="add course repository" />
   </component>
 </project>
