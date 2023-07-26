@@ -1,5 +1,3 @@
-package com.pluralsight.courseinfo.cli;
-
 import com.pluralsight.courseinfo.cli.service.CourseRetrievalService;
 import com.pluralsight.courseinfo.cli.service.CourseStorageService;
 import com.pluralsight.courseinfo.cli.service.PluralsightCourse;

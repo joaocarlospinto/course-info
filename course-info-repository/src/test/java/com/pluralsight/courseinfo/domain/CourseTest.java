@@ -17,7 +17,6 @@ public class CourseTest {
     @Test
     void rejectBlankNotes() {
         assertThrows(IllegalArgumentException.class, () ->
-                new Course("1", "title", 1, "URL", Optional.of("")));
+                new Course("1", "title", 1, "URL", Optional.of(" ")));
     }
-
 }
